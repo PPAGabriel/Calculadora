@@ -47,5 +47,38 @@ De aquí viene el nombre de la clase/librería que importamos en el siguiente pr
 
 > Tantos los valores a operar como el resultado fueron declarados como la clase que pertenecen, de manera tal de poder contar con los métodos que estas clases poseen. Ej: el método para comprobar si el resultado es NaN
 
+---
+
+# CAMBIOS PARA EL EXAMEN
+
+En esta oportunidad, hablamos de la versión 2.0 del programa, en la cual se empleó el repositorio Calculadora y se siguió el siguiente procedimiento.
+
+Inicialmente se realizaron las modificaciones en una rama nueva llamada "raices"
+
+>>git branch raices -> git checkout raices
+
+En esta, una vez realizado los cambios se procede a subir la rama en el repositorio junto a sus commits.
+
+>>git push origin raices
+
+Aquí, para traer todas las modificaciones a la rama Main, realizamos los siguientes pasos:
+
+>>Botón "Git" en la Barra de Navegación -> Merge... -> Etiqueta -squash (usando la rama raices a la main)
+
+**De esta manera traemos los cambios a la main y hacemos nuestro commit**
+
+## A DESTACAR ##
+
+Se emplearon los mismos parámetros del método calcular, condicionando la opción que el usuario ordene, teniendo esta en cuenta en una literal con el valor "5" (el que corresponde con la operación de raíz).
+
+Finalmente, se procede a crear una nueva etiqueta
+
+>> 1. git tag -a v2.0 -m "my version 2.0"
+>> 2. git push origin v2.0
+
+Así, realizamos la release en GitHub con el Jar correspondiente a la nueva Calculadora
+
+
+¡Este proyecto sólo acepta notas mínimas de 10! :smile:
 
 
