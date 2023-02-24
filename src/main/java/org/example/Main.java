@@ -19,8 +19,6 @@ public class Main {
                 } else {
                     EntradaSalida.salida(("El resultado es: " + r), EntradaSalida.SALIDA_WINDOW);
                 }
-            } else{
-                EntradaSalida.salida("Orden no encontrada",EntradaSalida.SALIDA_CONSOLA);
             }
         }
     }
