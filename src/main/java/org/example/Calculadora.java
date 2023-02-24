@@ -6,9 +6,10 @@ public class Calculadora {
     static final int RESTA = 2;
     static final int MULTIPLICACION = 3;
     static final int DIVISION = 4;
+    static final int RAIZ = 5;
 
     /**
-     * @param device --> operando deseado (SUMA, RESTA, MULTIPLICACIÓN, DIVISIÓN)
+     * @param device --> operando deseado (SUMA, RESTA, MULTIPLICACIÓN, DIVISIÓN, RAIZ)
      * @param n1 --> primer número de la operación
      * @param n2 --> segundo número de la operación (divisor de ser division)
      * @return resultado
@@ -44,7 +45,15 @@ public class Calculadora {
                     System.out.println("ERROR");
                 }
                 break;
+            case RAIZ:
+                try{
+                    RESULTADO = (float) Math.pow(n1,(1/n2));
+                }catch (Exception e){
+                    System.out.println("ERROR");
+                }
+                break;
         }
+
         return RESULTADO;
     }
 }
